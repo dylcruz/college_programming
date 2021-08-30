@@ -1,0 +1,3 @@
+# CST112 – Introduction to Programming
+
+This course introduces fundamental programming principles to beginners. Emphasis is placed on algorithm development, structured programming techniques, flowcharting, coding, debugging and libraries. It discusses programming concepts such as variables, conditionals, loops, functions, objects, and arrays. Program output may include graphical elements with images, animation and visualization.
