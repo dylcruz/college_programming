@@ -1,0 +1,10 @@
+#!/bin/bash
+
+let sum=0
+
+for x in $@
+do
+ let sum=$x+$sum
+done
+echo $sum
+exit 0

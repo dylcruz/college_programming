@@ -1,0 +1,5 @@
+#!/bin/bash
+
+num=`ls -l | wc -l`
+
+echo Number of files in current directory are $num

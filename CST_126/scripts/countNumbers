@@ -1,0 +1,11 @@
+#!/bin/bash
+
+let sum=0
+
+while [ $# != 0 ]
+do
+ let sum=$1+$sum
+ shift
+done
+echo $sum
+exit 0

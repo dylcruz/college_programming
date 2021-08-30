@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo $@
+
+shift 2
+
+echo $@
+
+set `who | head -1`
+
+echo $@

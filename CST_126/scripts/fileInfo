@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ -f $1 ]
+ then
+  set `ls -l`
+  shift 3
+  echo "File name is $8"
+  echo "File size is $4"
+  echo "Number of links to file $1"
+  echo "Owner of file is $2"
+  echo "Date last modified: $5 $6 $7"
+else
+ echo "Not a file"
+fi
+exit 0

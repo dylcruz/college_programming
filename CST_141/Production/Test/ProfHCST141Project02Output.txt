@@ -1,0 +1,9 @@
+Prof. Hassildine, CST141
+Project #02 Example Processes #1
+
+
+# of lines with at least 1 word in it: 16
+Total # of lines: hint-simply count lines read in using a variable.
+Characters: hint-simply total the length of the String read in each time.
+Word in file: hint-simply total length of each wordStrings[] array above ... or whatever you call your array.
+The arrayLists were not demonstrated here.

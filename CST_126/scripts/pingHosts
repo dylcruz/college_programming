@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for host in $@ 
+do
+  ping $host -c 4
+  echo
+done
+

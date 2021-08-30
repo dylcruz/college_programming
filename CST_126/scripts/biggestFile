@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set `ls -l`
+
+num=0
+name=0
+
+shift 2
+
+for files in $@  
+do
+  if [[ $5 > $num ]]
+  then
+    num=$5
+    name=$9
+  fi
+  shift 9
+done
+
+echo Biggest file is $name, which is $num bytes large!
+
+exit 0

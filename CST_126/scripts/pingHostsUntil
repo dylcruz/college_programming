@@ -1,0 +1,10 @@
+#!/bin/bash
+
+let x=0
+until [ $x -eq $# ]
+do
+  ping $1 -c 4
+  echo
+  shift
+done
+

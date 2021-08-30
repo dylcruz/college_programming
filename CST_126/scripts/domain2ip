@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for site in $@
+do
+ set `nslookup $site`
+ shift 6
+ echo "Name: $2"
+ echo "Address: $4"
+done
+exit 0

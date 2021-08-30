@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set pwd
+let filepath=$1
+set 
+
+if [ $# -gt 0 ]
+then
+  let filepath=$1
+fi
+
+for filenames in 

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cat << Test
+This is a test of the here document.
+Test
+exit 0

@@ -1,0 +1,28 @@
+#!/bin/bash
+
+if [ $1 -gt $2 ]
+then
+  big=$1
+  little=$2
+  while [ $big -ge $little ]
+  do
+    echo $big
+    let big=$big-1
+  done
+  exit 0
+elif [ $2 -gt $1 ]
+then
+  big=$2
+  little=$1
+  while [ $big -ge $little ]
+  do
+    echo $little
+    let little=$little+1
+  done
+  exit 0
+else
+  echo "Error: Numbers can't be the same!"
+  exit 0
+fi
+exit 0
+

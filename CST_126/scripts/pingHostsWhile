@@ -1,0 +1,10 @@
+#!/bin/bash
+
+let x=0
+while [ $x -ne $# ]
+do
+  ping $1 -c 4
+  echo
+  shift
+done
+

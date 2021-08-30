@@ -1,0 +1,51 @@
+#!/bin/bash
+
+option=z
+while [ $option != "h" ]
+do
+echo "Use one of these options:"
+echo "a or A: List all files in present working directory"
+echo "b or B: Display today's date and time"
+echo "c or C: Display whether a file is simple or directory"
+echo "d or D: Create a backup for a file"
+echo "e or E: Start an SSH session"
+echo "f or F: Start an ftp session"
+echo "h or H: Exit"
+echo "Enter your option and hit enter: "
+read option
+case "$option" in
+  a|A)	ls
+	;;
+  b|B) 	date
+	;;
+  c|C) 	echo "Enter the path of the file: "
+	read filePath
+	if [ -f $filePath ]
+	then
+	  echo "It's a simple file"
+	elif [ -d $filePath ]
+	then
+	  echo "It's a directory"
+	else
+	  echo "Error"
+	fi
+	;;
+  d|D)	echo "Enter the path of the file: "
+ 	read filePathCopy
+	cp $filePathCopy backupFile
+	;;
+  e|E)	echo "Enter an IP to SSH to: "
+	read ipSSH
+	ssh $ipSSH
+	;;
+  f|F)	echo "Enter an IP to FTP to: "
+	read ipFTP
+	ftp $ipFTP
+	;;
+  h|H) 	exit 0
+	;;
+  *)	echo "Invalid Option"
+	;;
+esac
+done
+exit 0

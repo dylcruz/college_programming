@@ -1,0 +1,19 @@
+#!/bin/bash
+
+isLogged=false
+name=John
+
+while [ "$isLogged" = false ]
+do
+  set `users`
+  for people in $@
+  do
+    echo $1
+    if [ $1 = $name ]
+    then
+      echo $name has logged in!!
+      isLogged=true
+    fi
+  done
+done
+exit 0

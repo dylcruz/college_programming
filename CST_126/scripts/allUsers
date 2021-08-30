@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set `users`
+
+for people in $@
+do
+  echo $1
+  shift
+done
+

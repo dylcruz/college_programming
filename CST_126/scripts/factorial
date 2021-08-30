@@ -1,0 +1,12 @@
+#!/bin/bash
+
+let x=0
+let sum=1
+
+while [ $x -ne $1 ]
+do
+  let x=$x+1
+  let sum=sum*x
+done
+echo $sum
+exit 0
